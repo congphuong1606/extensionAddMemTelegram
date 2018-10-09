@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+ 	"name": "Auto add member telegram",
+ 	"description": "Auto add member telegram - - @Author:PhuongCong - v1.01",
+ 	"version": "1.0",
+ 	"permissions": [
+ 		"http://*/*",
+ 		"https://*/*",
+ 		"tabs"
+ 	],
+ 	"browser_action": {
+  		"default_icon" : "img/Telegram-bitcoin-group.png",
+  		"default_popup": "addmem.html"
+	},
+ 	"icons": { 
+  		"128" : "img/Telegram-bitcoin-group.png"
+	},
+	"background": {
+		"scripts": ["js/addmem_background.js"]
+	}
+}

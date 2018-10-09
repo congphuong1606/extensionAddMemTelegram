@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src='js/addmem.js'></script>
+
+    <title>Auto add member telegram</title>
+</head>
+<body style="width: 600px;">
+
+<h1 style="text-align: center;color: #de9008"> Auto add member telegram</h1>
+<h4 style="text-align: center;color: gray;font-weight: normal;    margin-top: -10px;">@Author:PhuongCong - v1.0</h4>
+<hr>
+<div>
+    <label style="font-size: 16px;color: gray;width: 40%;"><span>。</span>Bật</label>
+    <label class="switch">
+        <input id="inputSw" type="checkbox" name="checkbox">
+        <span class="slider round"></span>
+    </label>
+</div>
+<br>
+
+<div>
+    <label style="font-size: 16px;color: gray;width: 100%">Array User Name: </label>
+    <textarea rows="10" cols="100" id="input-array-user-name" class="w3-input" style=" height: 25px ;"
+              type="text"></textarea>
+    <label style="font-size: 12px;color: red" id="error-input-array-user-name"></label>
+</div>
+
+
+<div style="    text-align: center; margin: 10px">
+    <button id="btn-save" class="button button1">LƯU</button>
+
+</div>
+</body>
+
+<style>
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch #inputSw {
+        display: none;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    #inputSw:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    #inputSw:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    #inputSw:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    #input-array-user-name {
+        width: 90%;
+        max-lines: 15;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 0.6px solid gray;
+    }
+
+    #input-array-user-name:focus {
+        border-radius: 0;
+    }
+
+    hr {
+        margin-bottom: 0px;
+        background-color: blue;
+        color: blue;
+    }
+
+    input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 15px;
+        height: 28px !important;
+        border: 0.6px solid gray;
+
+    }
+
+    input:focus {
+        border-radius: 0;
+    }
+
+    .button1:focus {
+        background-color: #f3910e;
+        color: white;
+        border-radius: 4px;
+        border: 0.6px solid #f3910e;
+    }
+
+    .button:focus {
+        background-color: #f3910e;
+        color: white;
+        border-radius: 4px;
+        border: 0.6px solid #f3910e;
+    }
+
+    .button {
+        background-color: #5bc0de; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: #f3910e;
+        color: white;
+        border-radius: 4px;
+        border: 0.6px solid #f3910e;
+
+    }
+
+    .button1:hover {
+        border-color: #5bc0de;
+        background-color: #5bc0de;
+        color: white;
+    }
+</style>
+</html>
